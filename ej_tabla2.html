@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+   
     
     <script>
     $(document).ready( function () {
@@ -13,10 +14,39 @@
     <title>Ejercicio de tabla</title>
 
 </head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color:burlywood;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+    }
+</style>
 
 
 <body>
-    <table id="datos" class="display">
+    <table id="datos" class="display" >
         <thead>
             <tr>
                 <th>Employee ID</th>
@@ -57,5 +87,8 @@
    <script>
      new DataTable('#example');
    </script>
+    <script>
+        let table = new Database('#Datos')
+    </script>
 </body>
 </html>    
